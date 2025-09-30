@@ -1,3 +1,9 @@
+
+---
+
+## 2️⃣ `.github/workflows/main.yml`
+
+```yaml
 name: Validate Architecture Markdown
 
 on:
@@ -25,7 +31,7 @@ jobs:
             exit 1
           fi
 
-          # Check for Mermaid diagram (use single quotes to avoid backtick issues)
+          # Check for Mermaid diagram
           if ! grep -q '```mermaid' "$FILE"; then
             echo "❌ Mermaid diagram not found in architecture.md"
             exit 1
