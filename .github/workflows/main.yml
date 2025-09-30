@@ -47,7 +47,7 @@ jobs:
 
       - name: Validate architecture.md
         run: |
-          FILE="my_project/architecture.md"
+          FILE="architecture.md"
           if [ ! -f "$FILE" ]; then
             echo "❌ architecture.md not found!"
             exit 1
