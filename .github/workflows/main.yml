@@ -1,9 +1,3 @@
-
----
-
-## 2️⃣ `.github/workflows/main.yml`
-
-```yaml
 name: Validate Architecture Markdown
 
 on:
