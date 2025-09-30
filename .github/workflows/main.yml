@@ -1,4 +1,4 @@
-name: Check Architecture Markdown
+name: Validate Architecture Markdown
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
             exit 1
           fi
 
-          # Check for Mermaid diagram using single quotes
+          # Check for Mermaid diagram (use single quotes to avoid backtick issues)
           if ! grep -q '```mermaid' "$FILE"; then
             echo "❌ Mermaid diagram not found in architecture.md"
             exit 1
