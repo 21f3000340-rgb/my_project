@@ -3,10 +3,10 @@ name: Validate Architecture Markdown
 on:
   push:
     paths:
-        - architecture.md
+      - architecture.md
   pull_request:
     paths:
-        - architecture.md
+      - architecture.md
 
 jobs:
   validate-architecture-md:
